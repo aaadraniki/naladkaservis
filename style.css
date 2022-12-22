@@ -542,16 +542,44 @@ color: var(--mainCol);
   margin-bottom: 30px;
 }
 .contact{
-  min-height: 90vh;
+  text-align: center;
+  min-height: 95vh;
+  padding-bottom: 30px;
   background: var(--mainGray);
   padding-top: 20px;
 }
 .revk_txt{
   font-size: 20px;
+  text-align: left;
+}
+.ch2 {
+  margin-top: 30px;
+}
+.ci2{
+  background-image: url("img/mail.png");
+}
+.canvas{
+  margin-top: 30px;
+}
+.num_email{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+}
+.map_txt{
+  margin-bottom: 0;
+  font-size: 20px;
+  margin-top: 30px;
 }
 /*RESPONSIVE*/
 @media only screen and (max-width: 861px) {
-
+.map_txt{
+    margin-bottom: 30px;
+  }
+.revk_txt {
+    text-align: center;
+}
   .tel_block{
     margin-bottom: 30px;
   }
@@ -697,5 +725,20 @@ color: var(--mainCol);
 }
 .filter{
   position: static;
+}
+}
+
+@media only screen and (max-width: 1140px) {
+  .map_txt{
+    margin-bottom: 30px;
+  }
+  .tel_block{
+    margin-bottom: 30px;
+  }
+  .contact_flex{
+    width: 90%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 }
