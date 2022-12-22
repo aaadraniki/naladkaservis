@@ -562,6 +562,8 @@ color: var(--mainCol);
   margin-top: 30px;
 }
 .num_email{
+  margin: 0;
+  width: auto;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
@@ -574,6 +576,13 @@ color: var(--mainCol);
 }
 /*RESPONSIVE*/
 @media only screen and (max-width: 861px) {
+  .num_email {
+    margin: auto;
+    width: 95%;
+  }
+  .tel_block a {
+    font-size: 17px;
+}
 .map_txt{
     margin-bottom: 30px;
   }
