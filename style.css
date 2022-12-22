@@ -509,6 +509,9 @@ color: var(--mainCol);
 
 /*CONTACT*/
 .tel_block{
+  display: inline-flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   background: var(--lightMC);
     padding: 10px 20px;
     border-radius: 8px;
@@ -526,9 +529,9 @@ color: var(--mainCol);
   background-image: url("img/tel.png");
   background-size: cover;
   background-position: center;
-  margin-right: 30px;
   height: 25px;
   width: 25px;
+  margin-right: 20px;
 }
 .contact_flex{
   width: 70%;
@@ -576,12 +579,15 @@ color: var(--mainCol);
 }
 /*RESPONSIVE*/
 @media only screen and (max-width: 861px) {
+  .c_icon{
+    margin-right: 0;
+}
   .num_email {
     margin: auto;
     width: 95%;
   }
   .tel_block a {
-    font-size: 17px;
+    font-size: 16px;
 }
 .map_txt{
     margin-bottom: 30px;
@@ -590,6 +596,7 @@ color: var(--mainCol);
     text-align: center;
 }
   .tel_block{
+    padding: 8px 15px;
     margin-bottom: 30px;
   }
   .contact_flex{
